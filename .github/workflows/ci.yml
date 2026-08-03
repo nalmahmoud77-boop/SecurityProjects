@@ -19,7 +19,7 @@ jobs:
       fail-fast: false
       matrix:
         # Every tool in the monorepo is tested across every supported Python.
-        project: [header-analyzer, recon-mapper]
+        project: [header-analyzer, recon-mapper, dir-buster]
         python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
 
     steps:

@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dir-buster"
+version = "1.0.0"
+description = "Web content and endpoint discovery: brute-force directories and files with concurrency, recursion, and soft-404 filtering."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["security", "pentest", "content-discovery", "directory-bruteforce", "fuzzing", "web-security"]
+authors = [{ name = "nalmahmoud77-boop" }]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Topic :: Security",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+dependencies = ["requests>=2.25"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.urls]
+Homepage = "https://github.com/nalmahmoud77-boop/SecurityProjects/tree/main/dir-buster"
+Issues = "https://github.com/nalmahmoud77-boop/SecurityProjects/issues"
+
+[project.scripts]
+dir-buster = "dir_buster.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["dir_buster*"]
