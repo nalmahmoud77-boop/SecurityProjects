@@ -16,9 +16,19 @@ updates:
         patterns:
           - "*"
 
-  # Keep Python dependencies (declared in header-analyzer/pyproject.toml) current.
+  # Keep each tool's Python dependencies (pyproject.toml) current.
   - package-ecosystem: pip
     directory: "/header-analyzer"
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: deps
+    labels:
+      - dependencies
+      - python
+
+  - package-ecosystem: pip
+    directory: "/recon-mapper"
     schedule:
       interval: weekly
     commit-message:

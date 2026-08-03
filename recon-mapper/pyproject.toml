@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recon-mapper"
+version = "1.0.0"
+description = "Reconnaissance and attack-surface mapper: subdomain enumeration, live-host resolution, web fingerprinting, and port scanning."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["security", "pentest", "recon", "reconnaissance", "subdomain-enumeration", "osint", "attack-surface"]
+authors = [{ name = "nalmahmoud77-boop" }]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Topic :: Security",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+dependencies = ["requests>=2.25"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.urls]
+Homepage = "https://github.com/nalmahmoud77-boop/SecurityProjects/tree/main/recon-mapper"
+Issues = "https://github.com/nalmahmoud77-boop/SecurityProjects/issues"
+
+[project.scripts]
+recon-mapper = "recon_mapper.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["recon_mapper*"]

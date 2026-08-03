@@ -10,7 +10,7 @@ A collection of small, focused tools for **web-application security testing**. E
 | Tool | What it does | Status |
 |------|--------------|--------|
 | [**header-analyzer**](header-analyzer/) | Audits a site's HTTP security headers (CSP, HSTS, cookies, …), grades it A–F, and gives copy-paste remediation. | ✅ Available |
-| recon-mapper | Domain/subdomain recon and tech-stack fingerprinting. | 🚧 Planned |
+| [**recon-mapper**](recon-mapper/) | Subdomain enumeration (passive + active), live-host resolution, web-stack fingerprinting, and optional port scanning. | ✅ Available |
 | dir-buster | Fast content & endpoint discovery with false-positive filtering. | 🚧 Planned |
 | vuln-scanner | Focused scanner for reflected XSS, SQLi, and open redirects. | 🚧 Planned |
 | vuln-lab | Deliberately vulnerable app + exploit scripts for safe practice. | 🚧 Planned |
